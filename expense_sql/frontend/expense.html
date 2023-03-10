@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="form-div">
+            <strong class="book">Expense tracker</strong><br>
+        <form method="POST" class="form-control">
+            <label for="amount">Enter Amount:-</label><br>
+                <input type="number" id="amount" class="enter" required><br>
+            <label for="comment">Enter your comment:-</label><br>
+                <input type="text" id="comment" class="enter" required><br>
+            <label for="catagory">catagory-</label>
+            <select name="catagory" id="catagory" class="btn1">
+                <option value="food">food</option>
+                <option value="oil">oil</option>
+                <option value="traveling">traveling</option>
+                <option value="education">education</option>
+                <option value="upskill">upskill</option>
+            </select>   
+            
+            <input type="submit" id="submit" value="add expense" class="btn">
+            </form>
+            <span id="total"></span><br><br>
+    <div id="addExpense"></div>
+        </div>
+    </main>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="expense.js"></script>
+</body>
+
+</html>

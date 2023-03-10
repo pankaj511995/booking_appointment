@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="form-div">
+            <strong class="book">Appointment</strong><br><div id="error"></div><br>
+        <form method="POST" class="form-control">
+            <label for="name">Enter your Name:-</label><br>
+                <input type="text" id="name" class="enter" required><br>
+            <label for="email">Enter your e-mail:-</label><br>
+                <input type="email" id="email" class="enter" required><br>
+            <label for="phone">Enter your phone:-</label><br>
+                 <input type="tel" id="phone" class="enter" required><br><br>
+            <input type="submit" id="submit" value="Send details" class="btn">
+            </form><br>
+    <div id="addDetails"></div>
+        </div>
+    </main>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="book.js"></script>
+</body>
+
+</html>
